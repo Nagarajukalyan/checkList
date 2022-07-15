@@ -125,6 +125,6 @@ app.get("/work", function(req, res){
     res.render("list", {listTitle: "Work list", newlist: workitems});
 });
 
-app.listen(3000, function(){
+app.listen(process.env.PORT||3000, function(){
     console.log("Server is running on port 3000");
 });
