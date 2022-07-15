@@ -5,7 +5,7 @@ const _=require("lodash");
 
 const date=require(__dirname+"/date.js");
 
-mongoose.connect("mongodb+srv://admin-kalyan:nagarajukalyan@cluster0.f0al2wx.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.f0al2wx.mongodb.net/todolistDB");
 
 const itemsSchema= {
     name: String
